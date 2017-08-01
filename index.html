@@ -15,14 +15,14 @@
 
 
     <!-- vendor -->
-   
+
 
     <!-- nexpaq libs -->
     <script type="text/javascript" src="js/NexpaqHeader.js"></script>
 
     <!-- partials -->
     <script type="text/javascript" src="vendor/mdl/materialDesign.js"></script>
-   
+
     <!-- screens -->
 
     <!-- tools-->
@@ -35,7 +35,7 @@
   </head>
   <body>
     <div id="wrapper" class="wrapper" data-level="0">
-      
+
       <div id="main-screen" class="main-screen mdl-layout mdl-js-layout mdl-layout--fixed-header">
           <div class="heating-screen" id="heating-screen">
             <div class="warming-text" id="warming-text">Warming...</div>
@@ -55,7 +55,7 @@
           <div class="snapshot-screen hidden" id="snapshot-screen">
           <table class="measurement_table" id="measurement_table">
             <thead>
-              <th><input type="text" id="label" placeholder="Add Label"></th>
+              <th><input type="text" id="label" placeholder="Add Label" onfocus="this.placeholder=''" onblur="this.placeholder='Add Label'"></th>
             </thead>
             <tr>
               <td class="name">Pollution</td>
@@ -74,6 +74,6 @@
         <div id="snackbar">Saved</div>
 
       </div>
-   
+
  </body>
 </html>
